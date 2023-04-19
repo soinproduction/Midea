@@ -1,0 +1,60 @@
+.banner {
+  border-radius: 14px;
+  width: 100%;
+  padding: 20px 150px 20px 60px;
+  background-image: var(--bottom-banner-bg),
+  linear-gradient(92.52deg, #FFFFFF 0%, #ECECEC 100%);
+  background-position: 100% 0;
+  background-repeat: no-repeat;
+  background-size: contain;
+  grid-gap: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  .content {
+    display: flex;
+    flex-direction: column;
+    grid-gap: 16px;
+    font-family: var(--font-family);
+    color: rgba(var(--cl-e),1.0);
+    max-width: 600px;
+  }
+
+  .image {
+    max-width: 409px;
+  }
+
+  .title {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 125%;
+    text-transform: uppercase;
+  }
+
+  .subtitle {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 100%;
+    min-height: 60px;
+  }
+
+  .link {
+    font-family: var(--font-family);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 100%;
+    text-align: center;
+    padding: 12px 32px;
+    color: rgba(var(--cl-c),1.0);
+    border: 1px solid var(--border-a);
+    width: fit-content;
+    border-radius: 34px;
+    background: rgba(var(--bg-a),1.0);
+  }
+
+
+}

@@ -1,0 +1,31 @@
+.product_input {
+  max-width: 116px;
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  background: rgba(var(--bg-a),1.0);
+  border-radius: 30px;
+}
+.wrapper {
+
+}
+
+.input {
+  font-family: var(--font-family);
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #4F4F4F;
+}
+
+.btn {
+  color: rgba(var(--cl-c),1.0);
+
+  svg {
+    fill: currentColor;
+  }
+}

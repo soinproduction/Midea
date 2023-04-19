@@ -1,0 +1,57 @@
+// --------------- hex to rgba mixin ---------------
+@function HexToRGB($hex) {
+  @return red($hex), green($hex), blue($hex);
+}
+:root {
+// --------------- default global variable ---------------
+  --body-bg: #F7F7F6;
+  --header-bg: #FFFFFF;
+  --footer-bg: #FFFFFF;
+  --body-font-size: 16px;
+  --content-width: 1240px;
+  --container-offset: 15px;
+  --container-width: calc(var(--content-width) + (var(--container-offset) * 2));
+
+  --row-gap: 32px; // var(--row-gap);
+  --coll-gap: 32px; // var(--row-gap);
+
+// --------------- default font-family variable ---------------
+  --font-family: "Montserrat" , sans-serif; // var(--font-family);
+
+// --------------- default text color variable ---------------
+  // --burger-cl: #{HexToRGB(#00d655)};
+
+  --cl-a: #{HexToRGB(#ffffff)}; // rgba(var(--cl-a),1.0);
+  --cl-b: #{HexToRGB(#000000)}; // rgba(var(--cl-b),1.0);
+  --cl-c: #{HexToRGB(#2585CD)}; // rgba(var(--cl-c),1.0);
+  --cl-d: #{HexToRGB(#828282)}; // rgba(var(--cl-d),1.0);
+  --cl-e: #{HexToRGB(#4F4F4F)}; // rgba(var(--cl-e),1.0);
+  --cl-f: #{HexToRGB(#F2F2F2)}; // rgba(var(--cl-f),1.0);
+  --cl-g: #{HexToRGB(#F7F7F6)}; // rgba(var(--cl-g),1.0);
+  --cl-h: #{HexToRGB(#BDBDBD)}; // rgba(var(--cl-h),1.0);
+  --cl-i: #{HexToRGB(#EB5757)}; // rgba(var(--cl-i),1.0);
+  --cl-j: #{HexToRGB(#DADADA)}; // rgba(var(--cl-j),1.0);
+  --cl-k: #{HexToRGB(#333333)}; // rgba(var(--cl-k),1.0);
+
+// --------------- default background cl variable ---------------
+  --bg-a: #{HexToRGB(#ffffff)}; // rgba(var(--bg-a),1.0);
+  --bg-b: #{HexToRGB(#000000)}; // rgba(var(--bg-b),1.0);
+  --bg-c: #{HexToRGB(#2585CD)}; // rgba(var(--bg-c),1.0);
+  --bg-d: #{HexToRGB(#828282)}; // rgba(var(--bg-d),1.0);
+  --bg-e: #{HexToRGB(#4F4F4F)}; // rgba(var(--bg-e),1.0);
+  --bg-f: #{HexToRGB(#F2F2F2)}; // rgba(var(--bg-f),1.0);
+  --bg-g: #{HexToRGB(#F7F7F6)}; // rgba(var(--bg-g),1.0);
+  --bg-h: #{HexToRGB(#BDBDBD)}; // rgba(var(--bg-h),1.0);
+  --bg-i: #{HexToRGB(#EB5757)}; // rgba(var(--bg-i),1.0);
+  --bg-j: #{HexToRGB(#DADADA)}; // rgba(var(--bg-j),1.0);
+  --bg-k: #{HexToRGB(#333333)}; // rgba(var(--bg-k),1.0);
+
+
+// --------------- default border cl variable ---------------
+  --border-a: #2585CD; // var(--border-a);
+
+
+// --------------- gradient background cl variable ---------------
+  --gradient-a:linear-gradient(90deg, #1E2346 0%, #312783 100%);
+
+}
