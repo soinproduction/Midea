@@ -2,6 +2,7 @@ import {useEffect, useState} from "react";
 import {path} from "../helpers/path";
 
 import {useStore} from "../store/store";
+import {Action} from "../store/action";
 
 export const useProducts = () => {
     const [isProductsLoading, setIsProductsLoading] = useState(true);
@@ -17,7 +18,7 @@ export const useProducts = () => {
             const response = await fetch(path.getProducts, {signal});
             // setProducts(await response.json());
 
-            dispatch({type: 'setProducts', payload: await response.json()})
+            dispatch({type: Action.setProducts, payload: await response.json()})
         };
         setProductsError(false);
 

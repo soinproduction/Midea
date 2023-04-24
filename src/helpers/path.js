@@ -2,7 +2,7 @@ export const path = {
     home:'/',
     favorite: '/favorite',
     basket: '/basket',
-    products: '/products',
+    products: '/product',
     getCategories: 'https://fakestoreapi.com/products/categories',
     getProducts: 'https://fakestoreapi.com/products',
     getSingleProduct: 'https://fakestoreapi.com/products/'

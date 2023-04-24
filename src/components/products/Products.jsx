@@ -13,7 +13,7 @@ function Products() {
     const [count, setCount] = useState(10);
     const {isProductsLoading, productsError} = useProducts();
 
-    const {state,dispatch} = useStore();
+    const {state} = useStore();
     const {products} = state;
 
     const maxProductQty = products?.length;

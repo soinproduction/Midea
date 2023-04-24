@@ -7,15 +7,13 @@ import {ReactComponent as BagIcon} from "../../assets/images/icons/bag.svg";
 import {ReactComponent as HeartIcon} from "../../assets/images/icons/heart.svg";
 
 import {useStore} from "../../store/store";
-
+import {getProductQty} from "../basket/basketStub/getProductQty";
 
 const Nav = () => {
-
     const {state} = useStore();
 
-    const countCart = state.cart.products.length;
+    const countCart = getProductQty(state.cart.products);
     const countFavorite = state.favorite.products.length;
-
 
     const navObj = [
         {
@@ -37,10 +35,7 @@ const Nav = () => {
         <nav className={styles.nav}>
             {navObj.map((nav) => (
                     <NavLink key={nav.link} to={nav.link} className={styles.link}>
-                        {nav.count ?
-                            <span className={styles.count}>
-                                {nav.count}
-                            </span> : null}
+                        {nav.count ? <span className={styles.count}> {nav.count} </span> : null}
                         {nav.icon}
                         {nav.text}
                     </NavLink>

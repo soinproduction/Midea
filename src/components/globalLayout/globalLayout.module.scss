@@ -1,0 +1,16 @@
+.box {
+  display: flex;
+  flex-direction: column;
+  row-gap: var(--row-gap);
+}
+
+.title {
+  font-family: var(--font-family);
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 100%;
+  display: flex;
+  align-items: center;
+  color: #333333;
+}

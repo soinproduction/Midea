@@ -12,6 +12,7 @@ const initialState = {
         products: []
     },
     products: [],
+    product: {},
     orders: [],
     user: {
         id: '1',

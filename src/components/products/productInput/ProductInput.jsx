@@ -2,6 +2,7 @@ import styles from './ProductInput.module.scss'
 import {ReactComponent as MinusIcon} from "../../../assets/images/icons/minus.svg";
 import {ReactComponent as PlusIcon} from "../../../assets/images/icons/plus.svg"
 import {useState} from "react";
+import {useStore} from "../../../store/store";
 
 const inputData = {
     type: 'number',
@@ -11,18 +12,7 @@ const inputData = {
 const {product_input, btn, input} = styles;
 const {type, name} = inputData;
 
-const ProductInput = () => {
-
-    const [qty, setQty] = useState(1);
-    const minusClickHandler = () => {
-        setQty((prevQty) => prevQty - 1);
-    }
-    const plusClickHandler = () => {
-        setQty((prevQty) => prevQty + 1);
-    }
-
-    const isMinusButtonDisabled = qty === 1;
-
+const ProductInput = ({qty, minusClickHandler,plusClickHandler,isMinusButtonDisabled = false}) => {
     return (
         <>
             <div className={product_input}>
